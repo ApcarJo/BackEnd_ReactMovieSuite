@@ -20,7 +20,8 @@ module.exports = (sequelize, DataTypes) => {
     customerId: DataTypes.INTEGER,
     movieId: DataTypes.INTEGER,
     rentStart: DataTypes.DATE,
-    rentEnd: DataTypes.DATE
+    rentEnd: DataTypes.DATE,
+    // rate: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Order',
