@@ -19,7 +19,7 @@ class Pelicula{
         return res.data;
     }
 
-    async searchByGenre(movieGenre){
+    async searchByGenre(movieGenre, page){
         
         let listId = await axios.get('https://api.themoviedb.org/3/genre/movie/list?api_key=210d6a5dd3f16419ce349c9f1b200d6d&language=en-US')
         
@@ -28,7 +28,7 @@ class Pelicula{
         
         for (let i in genreId){
             if (movieGenre === genreId[i].name) {
-                let res = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=210d6a5dd3f16419ce349c9f1b200d6d&with_genres=${genreId[i].id}`);
+                let res = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=210d6a5dd3f16419ce349c9f1b200d6d&with_genres=${genreId[i].id}&page=${page}`);
                 return res.data;
             }
         }

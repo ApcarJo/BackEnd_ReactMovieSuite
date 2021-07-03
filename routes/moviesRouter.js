@@ -53,8 +53,9 @@ router.post('/actor', async (req, res)=> {
 router.post('/genre', async (req, res)=> {
     try {
         let movieGenre = req.body.genre;
+        let page = req.body.page;
         movieGenre = movieGenre.charAt(0).toUpperCase() + movieGenre.slice(1);
-        res.json(await moviesController.searchByGenre(movieGenre));
+        res.json(await moviesController.searchByGenre(movieGenre, page));
     } catch (err) {
         return res.status(500).json({
             mensaje: err.message
