@@ -22,6 +22,13 @@ class Rent{
 
     }
 
+    async allOrderCustomerId(id){
+        return Order.findAll({
+            where: {customerId: id} 
+        });
+
+    }
+
     async allCities(){
 
         let ordersFind = await Order.findAll();
@@ -29,7 +36,6 @@ class Rent{
     }
 
     async byCity(city){
-        console.log(city, "esta es la citie que estás buscando");
         let ordersFind = await Order.findAll();
         return Util.findByCity(ordersFind, city);
     }

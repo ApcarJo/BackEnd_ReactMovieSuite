@@ -59,6 +59,19 @@ router.post('/id', authenticate, async (req, res)=> {
     }
 });
 
+// Find all orders by customerId
+router.post('/customerId', authenticate, async (req, res)=> {             
+    try {
+        let customerId = req.body.customerId;
+        res.json(await orderController.allOrderCustomerId(customerId));
+        
+    } catch (err) {
+        return res.status(500).json({
+            mensaje: err.message
+        });
+    }
+});
+
 
 // PUSH - CREATE A NEW ORDER
 router.post("/", authenticate, async (req,res) =>{

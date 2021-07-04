@@ -20,9 +20,12 @@ module.exports = {
       movieId: {
         type: Sequelize.INTEGER
       },
-      // rate: {
-      //   type: Sequelize.INTEGER
-      // },
+      poster_path: {
+        type: Sequelize.STRING
+      },
+      rate: {
+        type: Sequelize.INTEGER
+      },
       rentStart: {
         type: Sequelize.DATE
       },
