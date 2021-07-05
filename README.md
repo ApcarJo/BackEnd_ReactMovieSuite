@@ -62,7 +62,7 @@ The technologies we used were: <br> <br>
 ```
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 3006;
 const router = require('./router');
 
 app.use(router);
@@ -75,12 +75,12 @@ app.listen(port, () => console.log(`Node server running on http://localhost:${po
 This js file:
 1. imported the **Express.js** library,
 2. saved its functionalities on "app",
-3. selected 3000 as the server's port and
+3. selected 3006 as the server's port and
 4. linked **router.js**.
 
 Then, the router.js' and express.json()' functionalities were "used", or, we assume, loaded in memory.
 
-**app.listen() _started_ a local node.js server that uses the 3000 port.**
+**app.listen() _started_ a local node.js server that uses the 3006 port.**
 <br>
 
 ### router.js
@@ -116,26 +116,26 @@ Install Postman from [here](https://www.postman.com/downloads/).
 
 In Postman:
 1. Add a new collection
-2. Use GET with the address: http://localhost:3000 <br> <br>
-Although we used 3000 as the default port, you can use another one of your choice.
+2. Use GET with the address: http://localhost:3006 <br> <br>
+Although we used 3006 as the default port, you can use another one of your choice.
 
 ### Movies:
 <br>
 
 To search top rated movies type the following:<br>
-http://localhost:3000/movies
+http://localhost:3006/movies
 
 To find movies by id just add a number after movies: POST<br>
-http://localhost:3000/movies
+http://localhost:3006/movies
 
 To find movies by title: POST<br>
-http://localhost:3000/movies/title 
+http://localhost:3006/movies/title 
 
 To search movies by genre: POST<br>
-http://localhost:3000/movies/genre 
+http://localhost:3006/movies/genre 
 
 To search movies by actor/actress: POST<br>
-http://localhost:3000/movies/actor/
+http://localhost:3006/movies/actor/
 
 
 
@@ -143,29 +143,29 @@ http://localhost:3000/movies/actor/
 <br>
 
 To get the list of all customers: GET<br>
-http://localhost:3000/customer
+http://localhost:3006/customer
 
 To find a customer by id: POST - {"customerId": "id"}<br>
-http://localhost:3000/customer/id
+http://localhost:3006/customer/id
 
 To find a customer by name: POST - {"name": "name"}<br>
-http://localhost:3000/customer/name
+http://localhost:3006/customer/name
 
 To create a new customer **(this will check first if mail exists in the database)**: POST<br>
-http://localhost:3000/customer
+http://localhost:3006/customer
 
 To modify some attributes of the customer: PUT<br>
-http://localhost:3000/customer
+http://localhost:3006/customer
 
 To delete a customer: DELETE - {"id": "id"}<br>
-http://localhost:3000/customer
+http://localhost:3006/customer
 
 ### Login
 <br>
 
 
 To log in: POST - {"mail": "yourmail", "password", "yourpassowrd"}
-http://localhost:3000/login/
+http://localhost:3006/login/
 
 Do not forget to save your token to postman Authorization "bearer token", to realize your actions.
 
@@ -174,39 +174,39 @@ Do not forget to save your token to postman Authorization "bearer token", to rea
 <br>
 
 To get the list of all orders: GET<br>
-http://localhost:3000/order
+http://localhost:3006/order
 
 To find a order by id: POST - {"id": "id"}<br>
-http://localhost:3000/order/id
+http://localhost:3006/order/id
 
 To find a order by city: POST - {"city": "city"}<br>
-http://localhost:3000/order/city
+http://localhost:3006/order/city
 
 
 To create a new order: POST<br>
-http://localhost:3000/order/
+http://localhost:3006/order/
 
 To delete a order: DELETE - {"id": "id"}<br>
-http://localhost:3000/order
+http://localhost:3006/order
 
 
 ### Series
 <br>
 
 To obtain a list of top rated series:<br>
-http://localhost:3000/series/toprated
+http://localhost:3006/series/toprated
 
 To find a tv show by id:<br>
-http://localhost:3000/series/id/ (your id)
+http://localhost:3006/series/id/ (your id)
 
 To find a serie by their title:<br>
-http://localhost:3000/series/title/ (your title)
+http://localhost:3006/series/title/ (your title)
 
 Obtaining series which will have at least one episode aired in the next seven day:<br>
-http://localhost:3000/series/ontheair7/
+http://localhost:3006/series/ontheair7/
 
 Obtaining series which are screened on theaters:<br>
-http://localhost:3000/series/screenedtheater/
+http://localhost:3006/series/screenedtheater/
 <br>
 <br>
 
@@ -252,7 +252,7 @@ Las tecnologías empleadas fueron: <br> <br>
 ```
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 3006;
 const router = require('./router');
 
 app.use(router);
@@ -265,7 +265,7 @@ app.listen(port, () => console.log(`Node server running on http://localhost:${po
 Este archivo js:
 1. importó la librería **Express.js**,
 2. guardó sus herramientas en "app",
-3. seleccionó 3000 como el puerto para el servidor y
+3. seleccionó 3006 como el puerto para el servidor y
 4. linked **router.js**.
 4. enlazó con **router.js**
 
@@ -274,7 +274,7 @@ Entonces, las herramientras de router.js y de express.json fueron "usadas", o, a
 
 
 
-**app.listen() _lanzó_ un servidor local node.js que emplea el puerto 3000.**
+**app.listen() _lanzó_ un servidor local node.js que emplea el puerto 3006.**
 <br>
 
 
@@ -312,26 +312,26 @@ Instalar Postman desde [aquí](https://www.postman.com/downloads/).
 
 En Postman:
 1. Crea una nueva colección
-2. Emplea GET con la dirección: http://localhost:3000 <br> <br>
-Aunque nosotros hemos usado el puerto 3000, se puede utilizar cualquier otro a voluntad.
+2. Emplea GET con la dirección: http://localhost:3006 <br> <br>
+Aunque nosotros hemos usado el puerto 3006, se puede utilizar cualquier otro a voluntad.
 
 ### Movies:
 <br>
 Búsqueda de películas mejor valoradas<br>
 
-http://localhost:3000/movies
+http://localhost:3006/movies
 
 Búsqueda de películas por id POST<br>
-http://localhost:3000/movies
+http://localhost:3006/movies
 
 Búsqueda de películas por título POST<br>
-http://localhost:3000/movies/title 
+http://localhost:3006/movies/title 
 
 Búsqueda de películas por género POST<br>
-http://localhost:3000/movies/genre 
+http://localhost:3006/movies/genre 
 
 Búsqueda de películas por actor/actriz POST<br>
-http://localhost:3000/movies/actor/
+http://localhost:3006/movies/actor/
 
 
 
@@ -339,28 +339,28 @@ http://localhost:3000/movies/actor/
 <br>
 Obtener una lista de todos los clientes GET<br>
 
-http://localhost:3000/customer
+http://localhost:3006/customer
 
 Búsqueda de cliente por id POST - {"customerId": "id"}<br>
-http://localhost:3000/customer/id
+http://localhost:3006/customer/id
 
 Búsqueda de cliente por nombre POST - {"name": "name"}<br>
-http://localhost:3000/customer/name
+http://localhost:3006/customer/name
 
 Crear un nuevo usuario **(comprobará primero si el email ya está registrado)** POST<br>
-http://localhost:3000/customer
+http://localhost:3006/customer
 
 Modificar datos del cliente PUT<br>
-http://localhost:3000/customer
+http://localhost:3006/customer
 
 Eliminar cliente DELETE - {"id": "id"}<br>
-http://localhost:3000/customer
+http://localhost:3006/customer
 
 ### Login
 <br>
 
 Login POST - {"mail": "yourmail", "password", "yourpassowrd"}
-http://localhost:3000/login/
+http://localhost:3006/login/
 
 
 **No olvidar almacenar el token en Authorization/Bearer Token!**
@@ -370,38 +370,38 @@ http://localhost:3000/login/
 <br>
 Listar todos los pedidos GET<br>
 
-http://localhost:3000/order
+http://localhost:3006/order
 
 Búsqueda de pedido por id POST - {"id": "id"}<br>
-http://localhost:3000/order/id
+http://localhost:3006/order/id
 
 Búsqueda de pedido por ciudad POST - {"city": "city"}<br>
-http://localhost:3000/order/city
+http://localhost:3006/order/city
 
 Crear nuevo pedido POST<br>
-http://localhost:3000/order/
+http://localhost:3006/order/
 
 Borrar pedido DELETE - {"id": "id"}<br>
-http://localhost:3000/order
+http://localhost:3006/order
 
 
 ### Series
 <br>
 Listar series mejor valoradas<br>
 
-http://localhost:3000/series/toprated
+http://localhost:3006/series/toprated
 
 Búsqueda de series por id<br>
-http://localhost:3000/series/id/ (your id)
+http://localhost:3006/series/id/ (your id)
 
 Búsqueda de series por título<br>
-http://localhost:3000/series/title/ (your title)
+http://localhost:3006/series/title/ (your title)
 
 Listar series que serán emitidas en los próximos siete días<br>
-http://localhost:3000/series/ontheair7/
+http://localhost:3006/series/ontheair7/
 
 Listar series que serán representadas en cines o teatros<br>
-http://localhost:3000/series/screenedtheater/
+http://localhost:3006/series/screenedtheater/
 <br>
 <br>
 

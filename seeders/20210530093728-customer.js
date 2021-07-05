@@ -140,6 +140,22 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       },
+      {
+        "name": "Admin",
+        "surname1": "Solera",
+        "surname2": "Alemán",
+        "dni": "85494763",
+        "birthdate": "1998-01-01",
+        "phone": "95478412",
+        "address": "C/ Corona de Aragón",
+        "city": "Castellón",
+        "postalcode": "06214",
+        "mail": "admin@gmail.com",
+        "password": "$10$FZSknzwn7xyZqBFlAEWPbOwF4TYCdy3tvcYChhhYYFpOoaQHV80lK",
+        "admin": true,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
     ]
 
     );

@@ -77,7 +77,6 @@ router.post('/customerId', authenticate, async (req, res)=> {
 router.post("/", authenticate, async (req,res) =>{
     try{
         let body = req.body;
-        console.log(body);
         res.json(await orderController.newOrder(body));
     }catch (err){
         return res.status(500).json({
