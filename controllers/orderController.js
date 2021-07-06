@@ -11,7 +11,6 @@ class Rent{
         let ordersFind = await Order.findAll({
             where: {customerId: body.customerId, movieId: body.movieId}
         });
-        console.log(ordersFind, "ordersFind")
         if (ordersFind==''){
         return Order.create(body);
         } else {
