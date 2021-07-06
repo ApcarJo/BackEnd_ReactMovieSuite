@@ -23,7 +23,6 @@ module.exports = (sequelize, DataTypes) => {
     rate: DataTypes.INTEGER,
     rentStart: DataTypes.DATE,
     rentEnd: DataTypes.DATE,
-    // rate: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Order',
