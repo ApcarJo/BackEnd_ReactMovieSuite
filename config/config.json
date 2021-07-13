@@ -1,10 +1,12 @@
 {
   "development": {
-    "username": "root",
-    "password": "1234",
-    "database": "database_development",
-    "host": "127.0.0.1",
+    "username": "b2bd7946d8819f",
+    "password": "3d44901b",
+    "database": "heroku_7e77577cfd57d85",
+    "host": "eu-cdbr-west-01.cleardb.com",
+    "port": "3306",
     "dialect": "mysql"
+    
   },
   "test": {
     "username": "root",
@@ -14,10 +16,11 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "1234",
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "b2bd7946d8819f",
+    "password": "3d44901b",
+    "database": "heroku_7e77577cfd57d85",
+    "host": "eu-cdbr-west-01.cleardb.com",
+    "port": "3306",
     "dialect": "mysql"
   }
 }

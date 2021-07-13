@@ -22,16 +22,12 @@ class Client {
     }
 
     async customerId(id){
-
         return Customer.findByPk(id);
 
     }
 
     async newCustomer(body){
-
-        let password = body.password;
-        let passwordHashed = bcrypt.hashSync(password, 10);
-        body.password = passwordHashed;
+        body.password = await bcrypt.hashSync(body.password, 10);
         return Customer.create(body);
     }
 
